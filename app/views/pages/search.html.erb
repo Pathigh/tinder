@@ -1,0 +1,16 @@
+
+<h1>Busqueda al azar </h1>
+
+
+<div style="width: 15%; height: 270px; margin: auto; position: relative; margin-top: 50px; border: solid 1px ">
+<%= @user.gender %>
+<%= @user.email %> <br>
+<%= @user.age %> <br>
+
+<%= link_to 'like', interactions_path(id_user: @user.id, me_gusta: true), method: :post %>
+
+<%= link_to 'Dislike', interactions_path(id_user: @user.id, me_gusta: false), method: :post %>
+
+</div>
+
+
